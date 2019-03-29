@@ -1,3 +1,4 @@
+
 function query (selector) {
     return document.querySelector(selector)
 }
@@ -5,6 +6,7 @@ function query (selector) {
 function queryAll (selector) {
     return document.querySelector(selector)
 }
+
 
 document.addEventListener('DOMContentLoaded', function () {
     const promise = fetch(
