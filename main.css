@@ -1,5 +1,40 @@
+/* https://css-tricks.com/perfect-full-page-background-image/ */
+html { 
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.40),rgba(255, 255, 255, 0.40)),
+        url("/Users/kntiller/Desktop/hungrycat.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 h2 {
-    text-align: center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    text-align: right;
+    font-family: 'Alfa Slab One';
+    color: #000000;
+    text-shadow: 2px 2px 6px #FFFFFF, 4px 4px 15px #000000;
+}
+
+.now-playing {
+    margin-left: 2rem;
+}
+
+
+.now {
+    margin-left: 2rem;
+    font-family: 'Alfa Slab One';
+    color: #000000;
+    text-shadow: 2px 2px 6px #FFFFFF, 4px 4px 15px #000000;
+}
+
+
+.play-bar {
+    margin-left: 9%;
+    margin-top: 2rem;
+    width: 80%;
 }
 
 audio {
@@ -10,46 +45,78 @@ audio {
     line-height: 35px;
 }
 
-.now-playing {
+.search-results {
+    font-family: 'Alfa Slab One';
     margin-left: 2rem;
-    text-align:center;
+    font-size: 1.75rem;
+    text-align: left;
+    color: #000000;
+    text-shadow: 2px 2px 6px #FFFFFF, 4px 4px 15px #000000;
 }
 
-#search-bar {
+#artist {
+    font-family: 'Maven Pro'
+}
+
+
+
+audio::-webkit-media-controls-panel{
+    background-color: white;
+}
+
+audio::-webkit-media-controls-mute-button{
+  
+}
+
+audio::-webkit-media-controls-play-button{
+  
+}
+
+
+#searchInput {
     width: 65%;
-    margin-left: 12%;
+    margin-left: 14%;
     margin-right: 1rem;
     margin-top: 0;
     margin-bottom: 0;
+    font-family: 'Cinzel';
 }
 
-.search-results {
-    margin-left: 2rem;
-}
-
-.music-container {
+#music {
     display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    justify-content: space-around;
 }
 
-.music-group {
-    flex-direction: column;
-}
-
-.music-box {
-    border: 2px solid purple;
-    width: 150px;
-    height: 150px;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 0;
-}
-
-.artist {
+.musicGroup {
+    width: 200px;
     text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    opacity: 75%;
+    background:
+    linear-gradient(
+        rgba(125, 125, 125, 1), 
+        rgba(255, 255, 255, 1));
 }
 
 .title {
-    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Cinzel';
+}
+
+input::placeholder {
+    font-family: 'Cinzel';
+    color: #5D6D7E;
+}
+
+button {
+    border-radius: 15%;
+    width: 75px;
+    font-family: 'Cinzel';
+    color: black;
+    
 }
 
